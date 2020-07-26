@@ -37,7 +37,7 @@ def launchBot():
             msg_text = 'Итак, ты можешь:\n' \
                        '/now - узнать, какая сейчас погода:\n' \
                        '/forecast ДАТА - получить прогноз погоды на конкретную дату в ' \
-                       'следующие 5 дней (например, /forecast 25.07.2020)\n' \
+                       'следующие 5 дней (например, /forecast 2020-07-27)\n' \
                        'Если забудешь какую-либо команду - можешь еще раз заглянуть сюда через /help.'
             bot.send_message(message.chat.id, msg_text)
 
@@ -69,7 +69,7 @@ def launchBot():
             try:
                 datetime.datetime.strptime(message.text.split()[1], '%Y-%m-%d')
             except Exception as e:
-                msg_text = 'Некорректный формат даты: должен быть YYYY-MM-DD (Например, 2020-07-25).'
+                msg_text = 'Некорректный формат даты: должен быть YYYY-MM-DD (Например, 2020-07-27).'
 
             try:
                 date = message.text.split()[1]
