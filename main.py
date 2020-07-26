@@ -12,8 +12,8 @@ def launchBot():
     s_city = 'Yaroslavl,RU'
 
     try:
-        token = '1246966197:AAEqDcStmSK5pV7R_lKTf3gsoM9A5IKl_6M'
-        appid = 'b1991dbfa970987c677941054397038b'
+        token = 'YOUR_TOKEN'
+        appid = 'YOUR_APPID'
 
         bot = telebot.TeleBot(token)
 
